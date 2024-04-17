@@ -5,12 +5,12 @@
 
 <h1 align="center">Image Processing | Object Detection</h1>
 
-* [Purpose](#hash-purpose)
-* [Features](#hash-features)
-* [Raspberry Pi](#hash-raspberry-pi)
-    *  [How To Run?](##hash-how-to-run)
-* [Jetson Nano](#hash-jetson-nano)
-    *  [How To Run?](##hash-how-to-run)
+* [Purpose](#purpose)
+* [Features](#features)
+* [Raspberry Pi](#raspberry-pi)
+    *  [How To Run?](#how-to-run)
+* [Jetson Nano](#jetson-nano)
+    *  [How To Run?](#how-to-run)
 
 ## Purpose
 <div align="justify">
