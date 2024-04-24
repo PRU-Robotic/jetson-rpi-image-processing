@@ -133,4 +133,4 @@ python3 file_name.py
 
 ## Licence
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/PRU-Robotic/jetson-rpi-image-processing?tab=MIT-1-ov-file#readme) file for details.
