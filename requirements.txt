@@ -1,0 +1,11 @@
+numpy
+cvlib
+pigpio
+gpiozero
+RPi.GPIO
+pymavlink
+tensorflow
+TIME-python
+ultralytics
+opencv-python
+opencv-contrib-python
