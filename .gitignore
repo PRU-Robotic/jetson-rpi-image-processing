@@ -1,2 +1,3 @@
 *env
 .DS_Store
+yolov3_training_last.weights
