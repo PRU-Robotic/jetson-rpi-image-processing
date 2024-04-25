@@ -68,7 +68,7 @@ jetson-rpi-image-processing/
 │   └── ...
 │
 ├── training/
-│   └── train_YoloV3 .ipynb
+│   └── train_YoloV3.ipynb
 │
 ├── weights/
 │   ├── best.pt
