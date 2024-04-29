@@ -36,6 +36,8 @@ Main purpose of this repo is creating an image processing software base in mainb
   
 2. Using USB Camera for higher FPS and better software quality rather than CSI cameras. Further, 64-bit OS is not suitable with CSI cameras in general.
 
+3. WIP: `tensorflow` library is unavailable to install and use in Raspberry Pi 64-bit OS, currently. [Click to see the issue!](https://github.com/PRU-Robotic/jetson-rpi-image-processing/issues/1)
+
 </div>
 
 ## Project Structure
@@ -86,7 +88,7 @@ jetson-rpi-image-processing/
 - object_detection/: Contains image processing and object detection codes in both real time and normal.
 - test_images/: PNG or JPG image files for testing.
 - training/: Google Colab yolov3 training notebook.
-- weights/: Custom trained weight files for yolov3, yolov4-tiny and yolov5+
+- weights/: Custom trained weight files for yolov3, yolov4-tiny and yolov8
 - requirements.txt: Lists project dependencies.
 
 ## Raspberry Pi

@@ -17,7 +17,7 @@ output_layers = [layer_names[i - 1] for i in net.getUnconnectedOutLayers()]
 colors = np.random.uniform(0, 255, size=(len(classes), 3))
 
 # 0 for main camera(pc) : 1 for webcam
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 # resolution: 640x640 or 640x480
 #cap.set(cv2.CAP_PROP_FRAME_WIDTH, 608)

@@ -6,7 +6,7 @@ PURPOSE: Simple mechanism to control the frequency of object detection and annot
     ensuring that it happens only once every 10 frames captured from the webcam.
 """
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 # Load YOLO with custom weights, configuration, and labels
 weights = "../weights/yolov4-tiny-custom_last.weights"
@@ -33,5 +33,5 @@ while True:
     cv2.imshow("img_with_boxes", img)
 
     # Press ESC to exit
-    if cv2.waitKey(1)&0xFF==27:
+    if cv2.waitKey(1) & 0xFF == 27:
         break

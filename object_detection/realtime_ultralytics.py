@@ -5,11 +5,10 @@ from ultralytics import YOLO
 model = YOLO('../weights/best.pt')
 classes = model.names
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 prev_time = time.time()
 
-#input size of YOLO model:
-width, height = 416, 416
+width, height = 640, 480
 font = cv2.FONT_HERSHEY_SIMPLEX
 
 while cap.isOpened():
@@ -28,7 +27,7 @@ while cap.isOpened():
         cv2.putText(annotated_frame, f"FPS: {int(fps)}", (10, 20), font, 0.5, (0, 255, 0), 2)
         cv2.imshow("YOLOv8 Detection", annotated_frame)
 
-        if cv2.waitKey(1) & 0xFF == ord("q"):
+        if cv2.waitKey(1) & 0xFF == 27: #press ESC to exit
             break
     else:
         print("\nNo frame from camera!\n")
