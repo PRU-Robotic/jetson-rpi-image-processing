@@ -13,14 +13,15 @@
 * [Raspberry Pi](#raspberry-pi)
     * [How To Run?](#how-to-run)
 * [Jetson Nano](#jetson-nano)
+    * [Jetson Orin Nano](#jetson-orin-nano)
 * [Licence](#licence)
 
 ## Purpose
 <div align="justify">
 
-Base Image Processing and custom Object Detection repo focuses on YOLO (You Only Look Once) used in Jetson Nano & Raspberry Pi 4.
+Base Image Processing and custom Object Detection repo focuses on YOLO (You Only Look Once) used in Jetson Nano (+ Orin Nano) & Raspberry Pi 4.
 
-It also contains real time applications and related with electrical components such as Pixhawk and Servo motors.
+It also contains various real time image processing applications and related with electrical components such as Pixhawk and Servo motors.
 
 Main purpose of this repo is creating an image processing software base in mainboards for practicing and adapting the current experiences for the next generation of our technical project members.
 
@@ -28,6 +29,7 @@ Main purpose of this repo is creating an image processing software base in mainb
 ### Prerequisites
 * Raspberry Pi 4 - 4GB (at least)
 * Jetson Nano 4GB
+* Jetson Orin Nano
 * USB Camera
 * SD Card (32GB at least) and reader
 
@@ -36,7 +38,9 @@ Main purpose of this repo is creating an image processing software base in mainb
   
 2. Using USB Camera for higher FPS and better software quality rather than CSI cameras. Further, 64-bit OS is not suitable with CSI cameras in general.
 
-3. WIP: `tensorflow` library is unavailable to install and use in Raspberry Pi 64-bit OS, currently. [Click to see the issue!](https://github.com/PRU-Robotic/jetson-rpi-image-processing/issues/1)
+3. For USB cameras opencv index is: `In Raspberry Pi 4, videoCapture(1)` and `Jetson Nano devices, videoCapture(0)`.
+
+4. WIP: `tensorflow` library is unavailable to install and use in Raspberry Pi 64-bit OS, currently. [Click to see the issue!](https://github.com/PRU-Robotic/jetson-rpi-image-processing/issues/1)
 
 </div>
 
@@ -132,6 +136,16 @@ python3 file_name.py
 ```
 
 ## Jetson Nano
+
+### Jetson Orin Nano
+For Jetson Nano (4GB) and Jetson Orin Nano (8GB), there is no need to use python environment for running ultralytics library as an extra. It can be used installed and used, directly:
+```
+pip install ultralytics
+```
+or
+```
+pip3 install ultralytics
+```
 
 ## Licence
 
