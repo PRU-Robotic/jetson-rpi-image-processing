@@ -138,7 +138,7 @@ python3 file_name.py
 ## Jetson Nano
 
 ### Jetson Orin Nano
-For Jetson Nano (4GB) and Jetson Orin Nano (8GB), there is no need to use python environment for running ultralytics library as an extra. It can be used installed and used, directly:
+For Jetson Nano (4GB) and Jetson Orin Nano (8GB), there is no need to use python environment for running `ultralytics` library as an extra. It can be installed and used, directly:
 ```
 pip install ultralytics
 ```
